@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from models import Base, Restaurant, Customer, Review
 
 # Create a database connection
-engine = create_engine('mysql+mysqlconnector://einstein:qwerty123@localhost/restaurants')
+engine = create_engine('mysql+mysqlconnector://root:qwerty123@localhost/restaurants')
 
 Base.metadata.create_all(engine)
 
